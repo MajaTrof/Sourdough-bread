@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <title>Sourdough bread</title>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;1,500&family=Quicksand:wght@600&display=swap" rel="stylesheet">
+    <style>
+      /* основні стилі сторінки */
+body {
+  background: linear-gradient(
+    90deg,
+    rgb(244, 240, 237) 0%,
+    rgb(254, 249, 236) 100%
+  );
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: left;
+  text-indent: 40x;
+  width: 90%;
+  margin: 15px auto;
+  font-weight: 400;
+}
+/*  Montserrat 400, 500, 600, 700 italic
+Quicksand 600; */
+header {
+  display: flex;
+  align-items: center;
+}
+a {
+  text-decoration: none;
+  color: #3d2726;
+  font-weight: 300;
+  cursor: pointer;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+}
+
+a:hover,
+a:link {
+  color: #af7f59;
+}
+.reacipe-ingredients {
+  list-style: none;
+}
+/* шапка сайту */
+header {
+  background-color: rgb(255, 255, 255);
+}
+
+h1 {
+  text-shadow: 5px 5px 16px rgba(34, 34, 34, 0.5);
+  color: #222222;
+  font-weight: 400;
+  font-size: 40px;
+  letter-spacing: 5px;
+}
+.title-mission {
+  display: block;
+  padding: 40px 0 0 80px;
+  line-height: 1;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+}
+.title-p {
+  padding: 20px 60px 0 60px;
+}
+/* images */
+.header_img {
+  float: left;
+  margin: 0 15px 0 0;
+}
+.title-img {
+  float: left;
+  margin: 10px 15px 7px 10px;
+  border-radius: 10px;
+}
+
+.reacipe-img {
+  float: right;
+  margin: 0 15px 7px 10px;
+  border-radius: 10px;
+}
+
+/* main blok */
+
+h2 {
+  border: 2px solid #eadad0;
+  font-family: Quicksand, Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  line-height: 2;
+  color: #3d2726;
+  text-align: center;
+  letter-spacing: 3px;
+}
+h3 {
+  font-weight: 500;
+  line-height: 1.5;
+  text-align: center;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+}
+
+.title-img {
+  border-radius: 10px;
+}
+
+/* інструкція приготування */
+.reacipe-instruction .points {
+  padding-left: 20px;
+  font-size: 17px;
+  margin-left: 90px;
+}
+
+p {
+  text-align: left;
+  text-indent: 35px;
+}
+.background_ingredients {
+  margin-left: 10px;
+  margin-top: 40px;
+}
+.background_instructions {
+  background: #ffffff;
+
+  margin: 40px 10px 10px 100px;
+}
+.reacipe-ingredients .text {
+  text-indent: 0;
+  text-align: left;
+  margin-left: -38px;
+  line-height: 1.8;
+}
+.reacipe-text {
+  font-style: italic;
+  font-weight: 500;
+  padding: 20px 60px 0 60px;
+}
+/* кнопка */
+button {
+  background: #efe7da;
+  font-weight: 600;
+  color: #3d2726;
+  display: block;
+  margin: 20px auto;
+  padding: 15px 20px;
+  border: 1px solid #ddb596;
+  border-radius: 10px;
+  box-shadow: 0px 8px 8px rgb(196 168 147 / 70%);
+  font-size: 17px;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+}
+
+button:hover,
+button:focus {
+  background: #3d2726;
+  color: #efe7da;
+  cursor: pointer;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-start {
+  display: flex;
+  align-items: flex-start;
+}
+footer {
+  font-size: 16px;
+}
+/* невидимі заголовки */
+.none {
+  display: none;
+}
+    </style>
+  </head>
+  <body>
+    <header>
+      <img
+        class="header_img"
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/048/136/original/80883607-icon-bread-monochrome-logo-fresh-product-a-vector-illustration-in-flat-style-.jpeg?1665515757"
+        alt="logo bread"
+        width="110"
+        height="90" />
+      <h1>Sourdough bread: what is it?</h1>
+    </header>
+
+    <main>
+      <!--about mission and bread-->
+      <section class="title">
+        <h2 class="none">My mission?</h2>
+        <p>
+          <strong class="title-mission">
+            My mission? To show that sourdough baking <br />
+            can be accessible to anyone, even you.</strong
+          >
+        </p>
+        <div class="flex-start">
+          <img
+            class="title-img"
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/048/223/original/easy-sourdough-bread-recipe.jpeg?1665579445"
+            alt="bread"
+            height="340"/>
+          <p class="title-p">
+            By using a special starter of wild yeast and bacteria, the positives
+            of consuming sourdough far outweigh the negative media eye.
+            Sourdough bread is a baking art form that is, by its very nature, a
+            healthier choice. Sourdough bread has many more advantages than
+            regular bread. Read moreBy using a special starter of wild yeast and
+            bacteria, the positives of consuming sourdough far outweigh the
+            negative media eye. Sourdough bread is a baking art form that is, by
+            its very nature, a healthier choice. Sourdough bread has many more
+            advantages than regular bread.
+            <a
+              href="https://abreadaffair.com/bakery-vancouver/11-reasons-everyone-eating-sourdough-bread/"
+              target="_blank"
+              >Read more...</a
+            >
+          </p>
+        </div>
+      </section>
+      <!--reacipe-->
+      <section class="reacipe">
+        <h2>Rustic Sourdough Bread</h2>
+        <div class="flex-start">
+          <p class="reacipe-text">
+            Think you can't bake artisan sourdough bread at home?
+            <em>Think again!</em> Sourdough Bread will become your favorite
+            recipe for simple, easy, no-knead sourdough bread. Make the dough in
+            the morning or at night - it will come together in under 10 minutes.
+          </p>
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/048/224/original/beginner_sourdough_bread_recipe.jpeg?1665579490"
+            alt=""
+            width="300"
+            class="reacipe-img" />
+        </div>
+        <div class="flex">
+          <div class="background_ingredients">
+            <h3 >Ingredients</h3>
+            <ul class="reacipe-ingredients">
+              <li class="text">110g ripe (fed) sourdough starter</li>
+              <li class="text">340g water, lukewarm</li>
+              <li class="text">15g salt</li>
+              <li class="text">500g flour</li>
+            </ul>
+          </div>
+          <div class="background_instructions">
+            <h3>Instructions</h3>
+            <ol class="reacipe-instruction">
+              <li class="points">
+                Weigh your flour and combine all of the ingredients, kneading to
+                form a smooth dough.
+              </li>
+              <li class="points">
+                Allow the dough to rise, in a lightly greased, covered bowl,
+                until it's doubled in size, about 2 hours. Do four sets of
+                stretch and folds, 30 mins apart
+              </li>
+              <li class="points">
+                Cover, let proof 2 hours on the kitchen counter.
+              </li>
+              <li class="points">
+                Check your dough, and when it has almost doubled in size,
+                stretch, fold, and shape. Place in a parchment-lined bowl seam
+                side down. Cover with a towel and leave for 1 hour on the work
+                surface. Then put it in the refrigerator overnight.
+              </li>
+              <li class="points">
+                <strong>
+                  heating up your dutch oven or bread baker too, for 50-60
+                  minutes at 475-500F</strong
+                >
+              </li>
+              <li class="points">
+                Bake with the lid on for 20-25 minutes. Remove lid, lower heat
+                to 45oF and bake 15 more minutes, until very deeply golden and
+                internal temp reaches 208F.
+              </li>
+              <li class="points">Cool and enjoy!</li>
+            </ol>
+          </div>
+        </div>
+      </section>
+      <!--buy Sourdough Starter-->
+      <section>
+        <h2 class="none">Buy sourdough</h2>
+        <div> <p>
+          But before you dive in, here’s a secret: sourdough bread is more than
+          just a recipe… it’s an understanding.
+        </p></div>
+        <div>
+         <p> If you want to immerse yourself in this process, then purchase our
+          classic fresh sourdough starter!</p>
+        </div>
+        <button>Classic Fresh Sourdough Starter</button>
+      </section>
+    </main>
+    <footer>
+      Reacipe by
+      <a
+        href="https://www.instagram.com/maia_trof/"
+        target="_blank"
+        >Nataliia Trofymchuk</a
+      >
+    </footer>
+    <script>
+      function question() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email adress?");
+        let years = prompt("How old are you?");
+
+        if (years >= 12) {
+          alert(`Thank you, ${name}! We will contact you soon.`);
+        } else {
+          alert(
+            `Sorry, ${name}! We can't sell you sourdough! You're only ${years} and you can't shop in our store by yourself`
+          );
+        }
+      }
+
+      let applyButton = document.querySelector("button");
+      applyButton.addEventListener("click", question);
+    </script>
+  </body>
+</html>
